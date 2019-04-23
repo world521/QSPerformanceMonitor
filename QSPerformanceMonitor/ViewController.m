@@ -13,16 +13,38 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
-
+@interface ViewController ()<UITableViewDataSource,UITableViewDelegate> {
+    UITableView *_tableView;
+}
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    _tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
+    _tableView.dataSource = self;
+    _tableView.delegate = self;
+    [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
+    [self.view addSubview:_tableView];
 }
 
+#pragma mark - UITableViewDataSource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 150;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    if (indexPath.row % 10 == 0) {
+        sleep(1);
+        cell.textLabel.text = @"这里会卡住";
+    } else {
+        cell.textLabel.text = [NSString stringWithFormat:@"cell%ld",indexPath.row];
+    }
+    return cell;
+}
 
 @end

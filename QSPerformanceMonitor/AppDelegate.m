@@ -12,6 +12,7 @@
     
 
 #import "AppDelegate.h"
+#import "QSPerformanceMonitor.h"
 
 @interface AppDelegate ()
 
@@ -21,7 +22,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [[QSPerformanceMonitor shareInstance] startMonitor];
+    
     return YES;
 }
 

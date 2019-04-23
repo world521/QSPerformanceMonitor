@@ -13,6 +13,7 @@
 		4F6B7D41226EB6FC00A24A23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F6B7D40226EB6FC00A24A23 /* Assets.xcassets */; };
 		4F6B7D44226EB6FC00A24A23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F6B7D42226EB6FC00A24A23 /* LaunchScreen.storyboard */; };
 		4F6B7D47226EB6FC00A24A23 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F6B7D46226EB6FC00A24A23 /* main.m */; };
+		4F6B7D4F226EB77300A24A23 /* QSPerformanceMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F6B7D4E226EB77300A24A23 /* QSPerformanceMonitor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		4F6B7D43226EB6FC00A24A23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F6B7D45226EB6FC00A24A23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F6B7D46226EB6FC00A24A23 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4F6B7D4D226EB77300A24A23 /* QSPerformanceMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QSPerformanceMonitor.h; sourceTree = "<group>"; };
+		4F6B7D4E226EB77300A24A23 /* QSPerformanceMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QSPerformanceMonitor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				4F6B7D38226EB6FA00A24A23 /* AppDelegate.m */,
 				4F6B7D3A226EB6FA00A24A23 /* ViewController.h */,
 				4F6B7D3B226EB6FA00A24A23 /* ViewController.m */,
+				4F6B7D4D226EB77300A24A23 /* QSPerformanceMonitor.h */,
+				4F6B7D4E226EB77300A24A23 /* QSPerformanceMonitor.m */,
 				4F6B7D3D226EB6FA00A24A23 /* Main.storyboard */,
 				4F6B7D40226EB6FC00A24A23 /* Assets.xcassets */,
 				4F6B7D42226EB6FC00A24A23 /* LaunchScreen.storyboard */,
@@ -144,6 +149,7 @@
 				4F6B7D3C226EB6FA00A24A23 /* ViewController.m in Sources */,
 				4F6B7D47226EB6FC00A24A23 /* main.m in Sources */,
 				4F6B7D39226EB6FA00A24A23 /* AppDelegate.m in Sources */,
+				4F6B7D4F226EB77300A24A23 /* QSPerformanceMonitor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
